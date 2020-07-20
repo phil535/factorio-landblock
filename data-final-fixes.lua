@@ -49,8 +49,8 @@ end
 local removerecipes = {}
 for _,v in ipairs({
   'bob-resin-wood',
-  'burner-mining-drill',
-  'electric-mining-drill',
+  --'burner-mining-drill',
+  --'electric-mining-drill',
   'slag-processing-nuc',
   'alien-artifact-red-from-basic',
   'alien-artifact-orange-from-basic',
@@ -64,7 +64,7 @@ for _,v in ipairs({
   'thermal-water-filtering-2',
   'circuit-paper-board', -- currently useless
   'protection-field-goopless',
-  'steam-mining-drill'
+  --'steam-mining-drill'
 }) do
   removerecipes[v] = true
 end
@@ -76,8 +76,8 @@ local unobtainable = {}
 for _,v in ipairs({
   --'raw-wood',
   --'solid-oil-residual',
-  'coal',
-  'coal-crushed',
+  --'coal',
+  --'coal-crushed',
   'circuit-wood-fiber-board',
 
   --'gas-acid',
@@ -267,9 +267,9 @@ for k,v in pairs(data.raw.technology) do
 end
 
 -- No resource placement
-for k,v in pairs(data.raw.resource) do
-  v.autoplace = nil
-end
+--for k,v in pairs(data.raw.resource) do
+--  v.autoplace = nil
+--end
 -- No spawners
 -- for k,v in pairs(data.raw["unit-spawner"]) do
 --   v.autoplace = nil
@@ -304,3 +304,17 @@ end
 
 -- Spacemod updates
 require "SpaceMod-updates"
+
+
+-- Enable mining drills
+--settings.startup['bobmods-mining-miningdrills'].value = true
+--settings.startup['bobmods-mining-areadrills'].value = true
+--settings.startup['bobmods-mining-pumpjacks'].value = true
+--settings.startup['bobmods-mining-waterminers'].value = true
+
+--data.raw.recipe['bob-area-mining-drill-1'].enabled = true
+--data.raw.recipe['bob-area-mining-drill-2'].enabled = true
+--data.raw.recipe['bob-area-mining-drill-3'].enabled = true
+--data.raw.recipe['bob-area-mining-drill-4'].enabled = true
+
+

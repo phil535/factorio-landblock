@@ -79,7 +79,7 @@ table.insert(data.raw.technology['electronics'].effects, { type = "unlock-recipe
 lib.moveeffect('mixing-furnace', 'alloy-processing-1', 'electronics')
 
 -- No wood for electric poles, use wood bricks instead
-data.raw.recipe['small-electric-pole'].ingredients = {{ "wood-bricks", 1 }, { "copper-cable", 2}}
+-- data.raw.recipe['small-electric-pole'].ingredients = {{ "wood-bricks", 1 }, { "copper-cable", 2}}
 
 -- Will need a lot of landfill
 data.raw.recipe['landfill'].ingredients = {{ "stone-crushed", 10 }}

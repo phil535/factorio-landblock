@@ -21,7 +21,6 @@ landblock.giveitems = function(entity)
     {"stone", 50},
     {"small-electric-pole", 50},
     {"small-lamp", 12},
-
     {"iron-plate", 1200},
     {"basic-circuit-board", 200},
     {"stone-pipe", 100},
@@ -33,9 +32,9 @@ landblock.giveitems = function(entity)
     {"iron-stick", 96},
     {"pipe-to-ground", 2},
     {"electronic-circuit", 10},
-    -- {"wind-turbine-2", 120}
-    {"solar-panel", 38},
-    {"accumulator", 32}
+    {"wind-turbine-2", 120}
+    --{"solar-panel", 38},
+    --{"accumulator", 32}
   }
   for _,v in ipairs(stuff) do
     entity.insert{name = v[1], count = v[2]}
@@ -58,7 +57,7 @@ end)
 
 script.on_event(defines.events.on_chunk_generated, function(e)
   local surface = e.surface;
-  if surface.name ~= "nauvis" and surface.name:sub(1, 14) ~= "battle_surface" then
+  if surface.name ~= "nauvis" and surface.name:sub(1, 14) ~= "battle_surface" and surface.name ~= "oarc" then
     return
   end
   local ltx = e.area.left_top.x

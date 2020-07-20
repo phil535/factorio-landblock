@@ -1,11 +1,11 @@
 {
   "name": "LandBlock",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "factorio_version": "0.17",
   "title": "Land Block",
-  "author": "freebit75 (credit to Trainwreck)",
+  "author": "Phil535 (credit to Trainwreck & freebit75)",
   "homepage": "",
-  "description": "Just like SeaBlock, except on land.",
+  "description": "Play Bobs&Angels (with ore patches) and Seablock (on land) side by side. Works with OARC.",
   "dependencies": [
     "base",
     "angelsbioprocessing",
